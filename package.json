@@ -1,0 +1,29 @@
+{
+  "name": "array-function",
+  "version": "1.0.0",
+  "description": "Array splitting node.js function",
+  "main": "./bin/main.js",
+  "bin": {
+    "array-splitter": "./bin/main.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node -e 'require(\"./index\").splitArray(process.argv)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotunstick/array-function.git"
+  },
+  "author": "Adedotun Feyi-Sobanjo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotunstick/array-function/issues"
+  },
+  "homepage": "https://github.com/dotunstick/array-function#readme",
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
+}
