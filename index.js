@@ -4,11 +4,11 @@ exports.splitArray = (originalArray, size) => {
   }
 
   if (typeof size === 'undefined') {
-    throw new Error('No Count argument supplied');
+    throw new Error('No Size argument supplied.');
   }
 
   if (size < 0) {
-    throw new Error('Count is less than 0.');
+    throw new Error('Size is less than 0.');
   }
 
   const splitArrayByCount = (size, startIndex = 0, resultingArray = []) => {

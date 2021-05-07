@@ -8,25 +8,25 @@ describe('splitArray()', () => {
     }, new Error(('No array argument supplied.')));
   });
 
-  it('throws an error if no "count" argument is supplied', () => {
+  it('throws an error if no "size" argument is supplied', () => {
     assert.throws(() => {
       utilFunction.splitArray([1,2,3]);
-    }, new Error(('No Count argument supplied')));
+    }, new Error(('No Size argument supplied')));
   });
 
-  it('throws an error if "count" argument is less than 0', () => {
+  it('throws an error if "size" argument is less than 0', () => {
     assert.throws(() => {
       utilFunction.splitArray([1, 2, 3], -1);
-    }, new Error(('Count is less than 0.')));
+    }, new Error(('Size is less than 0.')));
   });
 
-  it('returns the original array split into chunks of the value of the "count" argument', () => {
+  it('returns the original array split into chunks of the value of the "size" argument', () => {
     const actual = utilFunction.splitArray([1, 2, 3, 4, 5], 3);
     const expected = [[1, 2], [3, 4], [5]];
     assert.deepStrictEqual(expected, actual);
   });
 
-  it('returns the original array split into chunks of the value of the "count" argument', () => {
+  it('returns the original array split into chunks of the value of the "size" argument', () => {
     const actual = utilFunction.splitArray([1, 2, 3], 3);
     const expected = [[1], [2], [3]];
     assert.deepStrictEqual(expected, actual);
